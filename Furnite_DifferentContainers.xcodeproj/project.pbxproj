@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4F92F3C32C08C2E7008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3C22C08C2E7008C3F16 /* main.cpp */; };
+		4F92F3CB2C08C4D8008C3F16 /* Furniture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3C92C08C4D8008C3F16 /* Furniture.cpp */; };
+		4F92F3CE2C08C918008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3CD2C08C918008C3F16 /* main.cpp */; };
+		4F92F3D12C09AD93008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3D02C09AD93008C3F16 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F92F3BF2C08C2E7008C3F16 /* TestKlasaVektor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestKlasaVektor; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F92F3BF2C08C2E7008C3F16 /* Furnite_DifferentContainers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Furnite_DifferentContainers; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F92F3C22C08C2E7008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3C92C08C4D8008C3F16 /* Furniture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Furniture.cpp; sourceTree = "<group>"; };
+		4F92F3CA2C08C4D8008C3F16 /* Furniture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Furniture.hpp; sourceTree = "<group>"; };
+		4F92F3CD2C08C918008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3D02C09AD93008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,8 @@
 		4F92F3B62C08C2E7008C3F16 = {
 			isa = PBXGroup;
 			children = (
+				4F92F3CF2C09AD79008C3F16 /* MapVectorSet */,
+				4F92F3CC2C08C8FF008C3F16 /* list */,
 				4F92F3C12C08C2E7008C3F16 /* TestKlasaVektor */,
 				4F92F3C02C08C2E7008C3F16 /* Products */,
 			);
@@ -49,7 +58,7 @@
 		4F92F3C02C08C2E7008C3F16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F92F3BF2C08C2E7008C3F16 /* TestKlasaVektor */,
+				4F92F3BF2C08C2E7008C3F16 /* Furnite_DifferentContainers */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +67,34 @@
 			isa = PBXGroup;
 			children = (
 				4F92F3C22C08C2E7008C3F16 /* main.cpp */,
+				4F92F3C92C08C4D8008C3F16 /* Furniture.cpp */,
+				4F92F3CA2C08C4D8008C3F16 /* Furniture.hpp */,
 			);
 			path = TestKlasaVektor;
+			sourceTree = "<group>";
+		};
+		4F92F3CC2C08C8FF008C3F16 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3CD2C08C918008C3F16 /* main.cpp */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		4F92F3CF2C09AD79008C3F16 /* MapVectorSet */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3D02C09AD93008C3F16 /* main.cpp */,
+			);
+			path = MapVectorSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F92F3BE2C08C2E7008C3F16 /* TestKlasaVektor */ = {
+		4F92F3BE2C08C2E7008C3F16 /* Furnite_DifferentContainers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F92F3C62C08C2E7008C3F16 /* Build configuration list for PBXNativeTarget "TestKlasaVektor" */;
+			buildConfigurationList = 4F92F3C62C08C2E7008C3F16 /* Build configuration list for PBXNativeTarget "Furnite_DifferentContainers" */;
 			buildPhases = (
 				4F92F3BB2C08C2E7008C3F16 /* Sources */,
 				4F92F3BC2C08C2E7008C3F16 /* Frameworks */,
@@ -77,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = TestKlasaVektor;
+			name = Furnite_DifferentContainers;
 			productName = TestKlasaVektor;
-			productReference = 4F92F3BF2C08C2E7008C3F16 /* TestKlasaVektor */;
+			productReference = 4F92F3BF2C08C2E7008C3F16 /* Furnite_DifferentContainers */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F92F3BA2C08C2E7008C3F16 /* Build configuration list for PBXProject "TestKlasaVektor" */;
+			buildConfigurationList = 4F92F3BA2C08C2E7008C3F16 /* Build configuration list for PBXProject "Furnite_DifferentContainers" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F92F3BE2C08C2E7008C3F16 /* TestKlasaVektor */,
+				4F92F3BE2C08C2E7008C3F16 /* Furnite_DifferentContainers */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F92F3CB2C08C4D8008C3F16 /* Furniture.cpp in Sources */,
 				4F92F3C32C08C2E7008C3F16 /* main.cpp in Sources */,
+				4F92F3D12C09AD93008C3F16 /* main.cpp in Sources */,
+				4F92F3CE2C08C918008C3F16 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F92F3BA2C08C2E7008C3F16 /* Build configuration list for PBXProject "TestKlasaVektor" */ = {
+		4F92F3BA2C08C2E7008C3F16 /* Build configuration list for PBXProject "Furnite_DifferentContainers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F92F3C42C08C2E7008C3F16 /* Debug */,
@@ -273,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F92F3C62C08C2E7008C3F16 /* Build configuration list for PBXNativeTarget "TestKlasaVektor" */ = {
+		4F92F3C62C08C2E7008C3F16 /* Build configuration list for PBXNativeTarget "Furnite_DifferentContainers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F92F3C72C08C2E7008C3F16 /* Debug */,
