@@ -11,6 +11,10 @@
 		4F92F3CB2C08C4D8008C3F16 /* Furniture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3C92C08C4D8008C3F16 /* Furniture.cpp */; };
 		4F92F3CE2C08C918008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3CD2C08C918008C3F16 /* main.cpp */; };
 		4F92F3D12C09AD93008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3D02C09AD93008C3F16 /* main.cpp */; };
+		4F92F3D52C0A6700008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3D42C0A6700008C3F16 /* main.cpp */; };
+		4F92F3D82C0A68CF008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3D72C0A68CF008C3F16 /* main.cpp */; };
+		4F92F3DB2C0A6B4C008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3DA2C0A6B4C008C3F16 /* main.cpp */; };
+		4F92F3DE2C0A6E51008C3F16 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F92F3DD2C0A6E51008C3F16 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,10 @@
 		4F92F3CA2C08C4D8008C3F16 /* Furniture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Furniture.hpp; sourceTree = "<group>"; };
 		4F92F3CD2C08C918008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4F92F3D02C09AD93008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3D42C0A6700008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3D72C0A68CF008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3DA2C0A6B4C008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F92F3DD2C0A6E51008C3F16 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 		4F92F3B62C08C2E7008C3F16 = {
 			isa = PBXGroup;
 			children = (
+				4F92F3D22C0A66D0008C3F16 /* SORTS */,
 				4F92F3CF2C09AD79008C3F16 /* MapVectorSet */,
 				4F92F3CC2C08C8FF008C3F16 /* list */,
 				4F92F3C12C08C2E7008C3F16 /* TestKlasaVektor */,
@@ -87,6 +96,49 @@
 				4F92F3D02C09AD93008C3F16 /* main.cpp */,
 			);
 			path = MapVectorSet;
+			sourceTree = "<group>";
+		};
+		4F92F3D22C0A66D0008C3F16 /* SORTS */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3DC2C0A6E40008C3F16 /* InsertionSort */,
+				4F92F3D92C0A6B31008C3F16 /* SelectionSort */,
+				4F92F3D62C0A68A2008C3F16 /* BubbleSort */,
+				4F92F3D32C0A66DA008C3F16 /* BogoSort */,
+			);
+			path = SORTS;
+			sourceTree = "<group>";
+		};
+		4F92F3D32C0A66DA008C3F16 /* BogoSort */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3D42C0A6700008C3F16 /* main.cpp */,
+			);
+			path = BogoSort;
+			sourceTree = "<group>";
+		};
+		4F92F3D62C0A68A2008C3F16 /* BubbleSort */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3D72C0A68CF008C3F16 /* main.cpp */,
+			);
+			path = BubbleSort;
+			sourceTree = "<group>";
+		};
+		4F92F3D92C0A6B31008C3F16 /* SelectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3DA2C0A6B4C008C3F16 /* main.cpp */,
+			);
+			path = SelectionSort;
+			sourceTree = "<group>";
+		};
+		4F92F3DC2C0A6E40008C3F16 /* InsertionSort */ = {
+			isa = PBXGroup;
+			children = (
+				4F92F3DD2C0A6E51008C3F16 /* main.cpp */,
+			);
+			path = InsertionSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +200,11 @@
 			files = (
 				4F92F3CB2C08C4D8008C3F16 /* Furniture.cpp in Sources */,
 				4F92F3C32C08C2E7008C3F16 /* main.cpp in Sources */,
+				4F92F3D82C0A68CF008C3F16 /* main.cpp in Sources */,
 				4F92F3D12C09AD93008C3F16 /* main.cpp in Sources */,
+				4F92F3DB2C0A6B4C008C3F16 /* main.cpp in Sources */,
+				4F92F3D52C0A6700008C3F16 /* main.cpp in Sources */,
+				4F92F3DE2C0A6E51008C3F16 /* main.cpp in Sources */,
 				4F92F3CE2C08C918008C3F16 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
