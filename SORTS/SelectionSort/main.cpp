@@ -16,24 +16,41 @@ void selectionSort(vector<int>& arr) {
     int n = arr.size();
 
     for (int i = 0; i < n - 1; ++i) {
-        // Find the minimum element in the unsorted portion of the array
+        
+        cout << "i:" << i << endl;
+        cout << "before:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        
+        // za element na i-tom mjestu
+        // trazi najmanje element od preostalih [i+1..<n] i njegov index spremi u minIndex
+        // i nakon toga swapa taj na i-tom i minIndex mjestima
         int minIndex = i;
         for (int j = i + 1; j < n; ++j) {
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
         }
-        // Swap the found minimum element with the first element of the unsorted portion
+        // sad swapa i-ti element s tim na minIndex
         swap(arr[i], arr[minIndex]);
+        
+        cout << "after:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        cout << "--------------------" << endl;
     }
 }
 
-int mainSelection() {
+int mainSelect() {
     // Example array to be sorted
-    vector<int> arr = {64, 25, 12, 22, 11};
+    vector<int> arr = {64, 25, 12, 22, 15};
 
     // Print the array before sorting
-    cout << "Unsorted array: ";
+    cout << "SELECTION SORT: Unsorted array: ";
     for (int num : arr) {
         cout << num << " ";
     }

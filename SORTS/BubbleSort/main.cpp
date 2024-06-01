@@ -19,6 +19,17 @@ void bubbleSort(vector<int>& arr) {
     bool swapped;
 
     for (int i = 0; i < n - 1; ++i) {
+        
+        cout << "i:" << i << endl;
+        cout << "before:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        
+        //druga FOR vrti [0..n-i-1] i ako je lijevi > desnog swapa ih
+        // i to je sve sto radi
+        // i onda ponovo prva FOR za jedan manje ....
         swapped = false;
         for (int j = 0; j < n - i - 1; ++j) {
             if (arr[j] > arr[j + 1]) {
@@ -26,7 +37,22 @@ void bubbleSort(vector<int>& arr) {
                 swap(arr[j], arr[j + 1]);
                 swapped = true;
             }
+            
+            cout << "swap j:" << j << endl;
+            for (int num : arr) {
+                cout << num << " ";
+            }
+            cout << endl;
+            
         }
+        
+        cout << "after:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        cout << "--------------------" << endl;
+
         // If no elements were swapped in the inner loop, then the array is already sorted
         if (!swapped) break;
     }
@@ -37,7 +63,7 @@ int mainBubble() {
     vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
 
     // Print the array before sorting
-    cout << "Unsorted array: ";
+    cout << "BUBBLE SORT: Unsorted array: ";
     for (int num : arr) {
         cout << num << " ";
     }

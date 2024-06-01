@@ -6,25 +6,43 @@ using namespace std;
 // Function to perform Insertion Sort
 void insertionSort(vector<int>& arr) {
     int n = arr.size();
+    
     for (int i = 1; i < n; ++i) {
+        
+        cout << "i:" << i << endl;
+        cout << "before:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        
         int key = arr[i];
         int j = i - 1;
-
-        // Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position
+        
+        // key pamti trenutni element
+        // sad se provjeri da li je jedan prije > key tj da je key je manji
+        // onda pomakne sve lemente [0...i] za jedan desno a onda na 0 postavi key element (trenutni)
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             --j;
         }
-        arr[j + 1] = key;
+        arr[j + 1] = key; // na pocetno stavi element koji je na poziciji [i] (pocetni element za ovu iteraciju)
+        
+        cout << "after:" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+        cout << "--------------------" << endl;
     }
 }
 
-int main() {
+int mainInsert() {
     // Example array to be sorted
     vector<int> arr = {12, 11, 13, 5, 6};
 
     // Print the array before sorting
-    cout << "Unsorted array: ";
+    cout << "INSERTION SORT: Unsorted array: ";
     for (int num : arr) {
         cout << num << " ";
     }
@@ -34,7 +52,7 @@ int main() {
     insertionSort(arr);
 
     // Print the array after sorting
-    cout << "Sorted array: ";
+    cout << "INSERTION SORT Sorted array: ";
     for (int num : arr) {
         cout << num << " ";
     }
