@@ -6,7 +6,9 @@ using namespace std;
 
 // Function to check if the vector is sorted
 bool isSorted(const vector<int>& arr) {
-    for (size_t i = 1; i < arr.size(); ++i) {
+    // provjeri da li je niz poredan po redu
+    
+    for (int i = 1; i < arr.size(); ++i) {
         if (arr[i] < arr[i - 1]) {
             return false;
         }
@@ -16,9 +18,6 @@ bool isSorted(const vector<int>& arr) {
 
 // Function to perform Bogo Sort using permutations
 void bogoSort(vector<int>& arr) {
-    // Sort the array initially to start with the first permutation
-    sort(arr.begin(), arr.end());
-
     // Check if the array is sorted (it will be sorted initially)
     if (isSorted(arr)) {
         return;
@@ -26,11 +25,20 @@ void bogoSort(vector<int>& arr) {
 
     // Generate permutations until the array is sorted
     while (!isSorted(arr)) {
+        
+        // napravi neku slucajnu permutaciju u nadi
+        // da ce pogoditi to jednu di su svi poredani
         next_permutation(arr.begin(), arr.end());
+        
+        cout << "Next permutation" << endl;
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
     }
 }
 
-int main() {
+int mainBogo() {
     // Example vector to be sorted
     vector<int> arr = {3, 2, 5, 1, 4};
 
@@ -46,7 +54,7 @@ int main() {
 
     // Print the vector after sorting
     cout << "Sorted array: ";
-    for (int num : arr) {
+    for (auto num : arr) {
         cout << num << " ";
     }
     cout << endl;

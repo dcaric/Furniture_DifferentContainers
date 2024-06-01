@@ -20,8 +20,10 @@ void insertionSort(vector<int>& arr) {
         int j = i - 1;
         
         // key pamti trenutni element
-        // sad se provjeri da li je jedan prije > key tj da je key je manji
-        // onda pomakne sve lemente [0...i] za jedan desno a onda na 0 postavi key element (trenutni)
+        // u while se provjeri da li je jedan prije element > key tj da je key je manji
+        // ako je to ispunjeno pomakne sve lemente [0...i] za jedan desno
+        // a onda na pocetak postavi key element (trenutni)
+        // taj pocetak je na [j+1] a to ovisi koiko je j smanjivan unutar whila
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             --j;
@@ -37,7 +39,7 @@ void insertionSort(vector<int>& arr) {
     }
 }
 
-int mainInsert() {
+int mainInsert () {
     // Example array to be sorted
     vector<int> arr = {12, 11, 13, 5, 6};
 

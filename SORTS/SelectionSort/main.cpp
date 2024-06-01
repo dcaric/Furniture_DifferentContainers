@@ -25,8 +25,9 @@ void selectionSort(vector<int>& arr) {
         cout << endl;
         
         // za element na i-tom mjestu
-        // trazi najmanje element od preostalih [i+1..<n] i njegov index spremi u minIndex
-        // i nakon toga swapa taj na i-tom i minIndex mjestima
+        // trazi najmanji element od preostalih [i+1..<n] elemenata kad nadje
+        // njegov index spremi u minIndex
+        // nakon FORa swapa elemente na i-tom i minIndex mjestima
         int minIndex = i;
         for (int j = i + 1; j < n; ++j) {
             if (arr[j] < arr[minIndex]) {

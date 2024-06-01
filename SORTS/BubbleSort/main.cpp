@@ -27,9 +27,9 @@ void bubbleSort(vector<int>& arr) {
         }
         cout << endl;
         
-        //druga FOR vrti [0..n-i-1] i ako je lijevi > desnog swapa ih
-        // i to je sve sto radi
-        // i onda ponovo prva FOR za jedan manje ....
+        // druga FOR vrti [0..n-i-1] i ako je lijevi > desnog swapa ih
+        // i onda ponovo prva FOR ide za jedan manje ....
+        // pa druga FOR opet isto ...
         swapped = false;
         for (int j = 0; j < n - i - 1; ++j) {
             if (arr[j] > arr[j + 1]) {
@@ -38,7 +38,7 @@ void bubbleSort(vector<int>& arr) {
                 swapped = true;
             }
             
-            cout << "swap j:" << j << endl;
+            cout << "swap " << j << " i " << j+1 << endl;
             for (int num : arr) {
                 cout << num << " ";
             }
