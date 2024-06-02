@@ -53,7 +53,7 @@ void shellSort(vector<int>& arr) {
     }
 }
 
-int mainShell() {
+int main() {
     // Example array to be sorted
     vector<int> arr = {12, 34, 54, 2, 3};
 
